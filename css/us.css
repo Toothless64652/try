@@ -1,0 +1,284 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: brown;
+}
+
+.about_container {
+    text-align: center;  
+    font-family: cursive;
+}
+
+.about_container header {
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 2;
+    background:000 url(../img/delight.jpg) no-repeat ;
+    background-size: 100% 100%;
+    margin-bottom: 0;
+}
+
+nav {
+    background: brown;
+}
+
+.fir {
+    padding: 100px 200px;
+    backdrop-filter: blur(10px);
+    width: 100%;   
+}
+
+.about_container header p {
+    font-size: 15px;
+    width: 60%;
+    margin: auto;
+}
+
+.fcontainer {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    height: 950px;
+    font-size: small;
+    align-items:center;
+}
+
+.fle {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.side, .side2 {
+    width: 45%;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+}
+
+img {
+    width: 30%;
+}
+
+.side {
+    font-size: 35px ;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.side p {
+    line-height: 6;
+    font-size: small;
+}
+
+.side h1, .fle h2, .side2 p {
+    margin-bottom: 30px;
+}
+
+.side img {
+    width: 380px;
+    height: 50%;
+}
+
+.side2 img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.scontainer {
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 2;
+    background:000 url(../img/delight.jpg) no-repeat ;
+    background-size: 100% 100%;
+    margin-bottom: 0;
+}
+
+.fir2 {
+    padding: 100px 50px;
+    backdrop-filter: blur(300px);
+    width: 100%;   
+}
+
+.scontainer p {
+    font-size: 15px;
+    width: 100%;
+    line-height: normal;
+    margin: auto;
+    margin-bottom: 40px;
+}   
+
+.border {
+    border-left: 2px solid rgba(14, 11, 11, 0.4);
+    width: 10px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.stroll {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.div {
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0px 0px 4px black;
+    width: 30%;
+}
+
+.div h3 {
+    font-size:20px;
+}
+
+.tcontainer {
+    position: relative;
+    line-height: 3;
+    padding: 50px 100px 100px;
+    text-align: left;
+    width: 100%;
+}
+
+.tcontainer p {
+    font-size: 15px;
+    width: 50%;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.teaming {
+    display: flex;
+    justify-content:space-between;
+    gap: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.tm {
+    position: relative;
+    line-height: normal;
+    width: 30%;
+    height: 400px;
+}
+
+.tm img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: object-fit 200ms ease-in-out;
+}
+
+.tm p {
+    width: 100%;
+}
+
+.words {
+    position: absolute;
+    bottom: 0;
+    background: rgba(165, 42, 42,0.5);
+    color: aqua;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    transition: 5s;
+}
+
+.tm:hover .words {
+    opacity: 1;
+}
+
+.tm:hover img {
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.ficontainer {
+    padding: 50px 100px;
+    background: aliceblue;
+    font-weight: 100;
+    line-height: 3;
+}
+
+.ficontainer p {
+    font-size: 15px;
+    width: 60%;
+    line-height: normal;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    justify-content:space-between;   
+    gap: 1rem;
+    font-size: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.iconslog {
+    background: white;
+    padding:50px 30px;
+    width: 30%;
+}
+
+.iconslog h1 {
+    line-height: normal;
+}
+
+.iconslog p {
+    margin-bottom: 0;
+    font-size: 8px;
+}
+
+
+@media (max-width:810px) {
+    body, h1, h3, h5 {
+        font-size: larger;
+    }
+
+    .about_container header p, .fir {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .side img {
+        width:200px;
+        height: auto;
+    }
+
+    .fcontainer, .fle, .side, .side2, .stroll, .scontainer, .tcontainer, .tcontainer p, .ficontainer, .teaming, .logo, .iconslog, .div {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2rem;
+        text-align: center;
+        height: auto;
+    }
+
+    .for, .for h3, .for h5 {
+        font-size: small;
+    }
+
+    .tm {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+
+}
